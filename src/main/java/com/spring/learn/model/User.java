@@ -1,10 +1,16 @@
 package com.spring.learn.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "用户")
 public class User {
     private String user_id;
 
+    @ApiModelProperty(value = "用户名")
     private String user_name;
 
+    @ApiModelProperty(value = "密码")
     private String password;
 
     public String getUser_id() {
